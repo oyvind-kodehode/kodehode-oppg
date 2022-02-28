@@ -3,7 +3,7 @@
   <!-- w3schools-js.html -->
   <!-- File ID: b48a7e4a-9a06-11ec-96d4-d9d22b540f2c -->
   <head>
-    <title></title>
+    <title>Oppgaver fra w3schools.org/js/</title>
     <style type="text/css">
       <!--
       body {
@@ -14,15 +14,77 @@
       a:link { color: blue; background-color: white; }
       a:visited { color: maroon; background-color: white; }
       a:active { color: fuchsia; background-color: white; }
+      pre.answer { background-color: #33ffff; }
       -->
     </style>
     <meta charset="utf-8" />
     <meta name="author" content="Øyvind — oyvind.kodehode@gmail.com" />
   </head>
   <body>
-    <p><a href="http://validator.w3.org/check?uri=referer">[Valid 
-    HTML5]</a>
-    <a href="http://jigsaw.w3.org/css-validator/check/referer">[Valid 
-    CSS]</a></p>
+
+<h1>Oppgaver fra <a 
+href="https://www.w3schools.com/js/">https://www.w3schools.com/js/</a></h1>
+
+<h2>JS HTML DOM</h2>
+
+<h3>Excercise 1</h3>
+
+<blockquote>
+<p>Use the <code>getElementById</code> method to find the 
+<code>&lt;p&gt;</code> element, and change its text to "Hello".</p>
+</blockquote>
+
+<pre class="answer">
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script type="application/javascript"&gt;
+  document.getElementById("demo").innerHTML = "Hello";
+&lt;/script&gt;
+</pre>
+
+<h3>Exercise 2</h3>
+
+<blockquote>
+<p>Use the <code>getElementsByTagName</code> method to find the first 
+<code>&lt;p&gt;</code> element, and change its text to "Hello".</p>
+</blockquote>
+
+<pre class="answer">
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+  document.getElementsByTagName("p")[0].innerHTML = "Hello";
+&lt;/script&gt;
+</pre>
+
+<h3>Excercise 3</h3>
+
+<blockquote>
+<p>Change the text of the first element that has the class name 
+"test".</p>
+</blockquote>
+
+<pre class="answer">
+&lt;p class="test"&gt;&lt;/p&gt;
+&lt;p class="test"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+document.getElementsByClassName("test")[0].innerHTML = "Hello";
+&lt;/script&gt;
+</pre>
+
+<h3>Excercise 4</h3>
+
+<blockquote>
+<p>Use HTML DOM to change the value of the image's src attribute.</p>
+</blockquote>
+
+<pre class="answer">
+&lt;img id="image" src="smiley.gif"&gt;
+&lt;script&gt;
+document.getElementById("image").src = "pic_mountain.jpg";
+&lt;/script&gt;
+</pre>
+
   </body>
 </html>
