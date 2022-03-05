@@ -3,7 +3,7 @@
   <!-- t1.html -->
   <!-- File ID: 97158ed6-9ad3-11ec-8b65-21959dfd2117 -->
   <head>
-    <title></title>
+    <title>t1</title>
     <style type="text/css">
       <!--
       body {
@@ -20,5 +20,15 @@
     <meta name="author" content="Øyvind — oyvind.kodehode@gmail.com" />
   </head>
   <body>
+    <p id="skrift"></p> <!-- Had to be before the script. If it's 
+    after, nothing is displayed. -->
+
+    <script type="application/javascript">
+      var i;
+      for (i = 0; i++; i < 10) {
+        document.getElementById("skrift").innerHTML = i;
+      }
+    </script>
+
   </body>
 </html>
