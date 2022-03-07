@@ -9,4 +9,5 @@ clean:
 
 .PHONY: test
 test:
+	xmllint --noout *.html
 	tidy -q -o /dev/null *.html
