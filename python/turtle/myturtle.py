@@ -20,6 +20,8 @@ __version__ = '0.0.0'
 parser = argparse.ArgumentParser(
     description='',
     )
+parser.add_argument('-e', '--edges', metavar="NUM", type=int,
+                    default=4, help='number of edges in shape')
 parser.add_argument('-v', '--verbose', action='count',
                     default=0, help='verbose level, can be repeated')
 parser.add_argument('--version', action='count',
@@ -44,7 +46,7 @@ def main():
         print("%s %s" % (progname, __version__))
         sys.exit(0)
 
-    runturtle(4)
+    runturtle(args.edges)
     input("Press Enter to terminate the poor turtle")
 
     return retval
