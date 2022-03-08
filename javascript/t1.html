@@ -24,10 +24,15 @@
     after, nothing is displayed. -->
 
     <script type="application/javascript">
-      var i;
-      for (i = 0; i < 100; i++) {
-        document.getElementById("skrift").innerHTML += " " + i;
+      function count(a) {
+        var i;
+
+        for (i = 0; i < a; i++) {
+          document.getElementById("skrift").innerHTML += " " + i;
+        }
       }
+
+      count(100);
     </script>
 
   </body>
