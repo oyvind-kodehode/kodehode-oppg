@@ -53,6 +53,8 @@ def main():
 
     if runturtle(args.edges):
         input("Press Enter to terminate the poor turtle")
+    else:
+        retval = 1
 
     return retval
 
