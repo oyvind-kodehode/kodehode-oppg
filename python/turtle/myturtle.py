@@ -29,11 +29,12 @@ parser.add_argument('--version', action='count',
 args = parser.parse_args()
 
 def runturtle(edges):
+    if edges < 2:
+        sys.stderr.write("runturtle(): edges cannot lower than 2\n")
+        return
+
     speed(11)
     shape("turtle")
-
-    if edges == 0:
-        sys.stderr.write("runturtle(): edges cannot be 0\n")
 
     for i in range(edges):
         forward(100)
