@@ -18,20 +18,13 @@
     </style>
     <meta charset="utf-8" />
     <meta name="author" content="Øyvind — oyvind.kodehode@gmail.com" />
+    <script type="application/javascript" src="t1.js" />
   </head>
   <body>
     <p id="skrift"></p> <!-- Had to be before the script. If it's 
     after, nothing is displayed. -->
 
     <script type="application/javascript">
-      function count(a) {
-        var i;
-
-        for (i = 0; i < a; i++) {
-          document.getElementById("skrift").innerHTML += " " + i;
-        }
-      }
-
       count(100);
     </script>
 
