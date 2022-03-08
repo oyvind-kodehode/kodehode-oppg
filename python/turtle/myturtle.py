@@ -27,7 +27,17 @@ parser.add_argument('--version', action='count',
 args = parser.parse_args()
 
 def runturtle():
+    speed(11)
+    shape("turtle")
+
     forward(100)
+    right(90)
+    forward(100)
+    right(90)
+    forward(100)
+    right(90)
+    forward(100)
+    right(90)
 
 def main():
     retval = 0
