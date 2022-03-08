@@ -32,7 +32,7 @@ args = parser.parse_args()
 
 def runturtle(edges):
     if edges < 2:
-        sys.stderr.write("runturtle(): edges cannot lower than 2\n")
+        sys.stderr.write("runturtle(): edges cannot be lower than 2\n")
         return 0
 
     speed(args.speed)
