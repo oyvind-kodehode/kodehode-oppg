@@ -22,6 +22,8 @@ parser = argparse.ArgumentParser(
     )
 parser.add_argument('-e', '--edges', metavar="NUM", type=int,
                     default=4, help='number of edges in shape')
+parser.add_argument('-s', '--speed', metavar="SPEED", type=int,
+                    default=10, help='speed of turtle')
 parser.add_argument('-v', '--verbose', action='count',
                     default=0, help='verbose level, can be repeated')
 parser.add_argument('--version', action='count',
@@ -33,7 +35,7 @@ def runturtle(edges):
         sys.stderr.write("runturtle(): edges cannot lower than 2\n")
         return
 
-    speed(11)
+    speed(args.speed)
     shape("turtle")
 
     for i in range(edges):
