@@ -33,7 +33,7 @@ args = parser.parse_args()
 def runturtle(edges):
     if edges < 2:
         sys.stderr.write("runturtle(): edges cannot lower than 2\n")
-        return
+        return 0
 
     speed(args.speed)
     shape("turtle")
@@ -42,6 +42,8 @@ def runturtle(edges):
         forward(100)
         right(360/edges)
 
+    return edges
+
 def main():
     retval = 0
 
@@ -49,8 +51,8 @@ def main():
         print("%s %s" % (progname, __version__))
         sys.exit(0)
 
-    runturtle(args.edges)
-    input("Press Enter to terminate the poor turtle")
+    if runturtle(args.edges):
+        input("Press Enter to terminate the poor turtle")
 
     return retval
 
