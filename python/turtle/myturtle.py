@@ -5,11 +5,11 @@
 
 File ID: 278c890a-9ec2-11ec-82b4-f7ce64ad7ea4
 
-License: GNU General Public License version 2 or later.
 Author: Øyvind <oyvind.kodehode@gmail.com>
 
 """
 
+from turtle import *
 import argparse
 import os
 import sys
@@ -26,12 +26,18 @@ parser.add_argument('--version', action='count',
                     default=0, help='print version information')
 args = parser.parse_args()
 
+def runturtle():
+    forward(100)
+
 def main():
     retval = 0
 
     if args.version:
         print("%s %s" % (progname, __version__))
         sys.exit(0)
+
+    runturtle()
+    input("Press Enter to terminate the poor turtle")
 
     return retval
 
