@@ -26,27 +26,16 @@ parser.add_argument('--version', action='count',
                     default=0, help='print version information')
 args = parser.parse_args()
 
-def runturtle(tshape):
+def runturtle(edges):
     speed(11)
     shape("turtle")
 
-    if "square" in tshape:
+    if edges == 0:
+        sys.stderr.write("runturtle(): edges cannot be 0\n")
+
+    for i in range(edges):
         forward(100)
-        right(90)
-        forward(100)
-        right(90)
-        forward(100)
-        right(90)
-        forward(100)
-        right(90)
-    elif "triangle" in tshape:
-        forward(100)
-        right(120)
-        forward(100)
-        right(120)
-        forward(100)
-    else:
-        sys.stderr.write("runturtle(): Unknown tshape\n")
+        right(360/edges)
 
 def main():
     retval = 0
@@ -55,7 +44,7 @@ def main():
         print("%s %s" % (progname, __version__))
         sys.exit(0)
 
-    runturtle("square")
+    runturtle(4)
     input("Press Enter to terminate the poor turtle")
 
     return retval
