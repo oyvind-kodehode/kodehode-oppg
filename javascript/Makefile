@@ -13,4 +13,5 @@ clean:
 
 .PHONY: test
 test:
+	xmllint --noout $(HTMLFILES)
 	tidy -o /dev/null -q $(HTMLFILES)
