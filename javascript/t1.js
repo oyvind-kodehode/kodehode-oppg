@@ -5,21 +5,23 @@
 
 "use strict";
 
+function update_text(text) {
+	if (typeof module !== 'undefined' && module.exports) {
+		// in Node.js
+		console.log(text);
+	} else {
+		// not in Node.js
+		document.getElementById("skrift").innerHTML = text;
+	}
+}
+
 function count(a) {
 	var i;
 	var text = "";
 
 	for (i = 0; i < a; i++) {
 		text += " " + i;
-
-		if (typeof module !== 'undefined'
-		    && module.exports) {
-			// in Node.js
-			console.log(text);
-		} else {
-			// not in Node.js
-			document.getElementById("skrift").innerHTML = text;
-		}
+		update_text(text);
 	}
 }
 
