@@ -3,7 +3,6 @@
 
 HTMLFILES  =
 HTMLFILES += t1.html
-HTMLFILES += w3schools-js.html
 
 .PHONY: all
 all:
