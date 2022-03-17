@@ -2,7 +2,7 @@
 # File ID: 8d560ac2-a5d4-11ec-977a-2fff93d806ad
 
 HTMLFILES  =
-HTMLFILES += index.html
+HTMLFILES += flex1.html
 
 .PHONY: all
 all:
