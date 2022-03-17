@@ -1,0 +1,13 @@
+/*
+ * index.css
+ * File ID: ef423766-a5d3-11ec-aaa9-83522b70d99b
+ */
+
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* flex-start flex-end center space-around
+space-between space-evenly */

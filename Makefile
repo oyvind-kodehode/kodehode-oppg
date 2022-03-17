@@ -3,18 +3,21 @@
 
 .PHONY: all
 all:
+	cd flexbox && $(MAKE)
 	cd javascript && $(MAKE)
 	cd oppg && $(MAKE)
 	cd svg && $(MAKE)
 
 .PHONY: clean
 clean:
+	cd flexbox && $(MAKE) clean
 	cd javascript && $(MAKE) clean
 	cd oppg && $(MAKE) test
 	cd svg && $(MAKE) clean
 
 .PHONY: test
 test:
+	cd flexbox && $(MAKE) test
 	cd javascript && $(MAKE) test
 	cd oppg && $(MAKE) test
 	cd svg && $(MAKE) test
