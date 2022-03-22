@@ -59,6 +59,11 @@ for (let i = 0; i < randomArr.length; i++)
 
 ex_header();
 
+const cuteAnimals = ["piggies", "puppies", "kitties", "birdies"];
+
+for (let i = 0; i < cuteAnimals.length; i++)
+	console.log(cuteAnimals[i] + " are cute");
+
 // -------------------------------------------------------
 // 5) Create a for loop that console logs the numbers 2 - 7 in reverse order
 //    Example output:
@@ -67,6 +72,9 @@ ex_header();
 
 ex_header();
 
+for (let i = 7; i >= 2; i--)
+	console.log(i);
+
 // -------------------------------------------------------
 // 6) Now take the loop from exercise 4 so the console logs are in reverse order
 //    Example output:
@@ -74,6 +82,9 @@ ex_header();
 // -------------------------------------------------------
 
 ex_header();
+
+for (let i = cuteAnimals.length - 1; i >= 0; i--)
+	console.log(cuteAnimals[i] + " are cute");
 
  // -------------------------------------------------------
  // 7) Using a function with parameter n, create a for loop which console log
