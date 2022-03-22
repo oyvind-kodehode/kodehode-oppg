@@ -8,8 +8,7 @@
 let headerCount = 1;
 
 function ex_header() {
-	console.log("\nExercise " + headerCount + "\n");
-	headerCount++;
+	console.log("\nExercise " + headerCount++ + "\n");
 }
 
 // -------------------------------------------------------
