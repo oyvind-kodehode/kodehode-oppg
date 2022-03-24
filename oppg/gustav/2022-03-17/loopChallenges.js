@@ -45,7 +45,7 @@ for (let i = 2; i <= 22; i += 2)
 
 ex_header();
 
-const randomArr =  ['hi', 5, true, 'hopefully this worked'];
+const randomArr = ['hi', 5, true, 'hopefully this worked'];
 
 for (let i = 0; i < randomArr.length; i++)
 	console.log(randomArr[i]);
@@ -96,6 +96,14 @@ for (let i = cuteAnimals.length - 1; i >= 0; i--)
 
 ex_header();
 
+function countUp(n) {
+	for (let i = 2; i <= n; i += 2)
+		console.log(i);
+}
+
+let n = 22;
+countUp(n);
+
  // -------------------------------------------------------
 // 8) Use a for loop to get the sum of an array
 //    Example output:
@@ -104,6 +112,14 @@ ex_header();
 // -------------------------------------------------------
 
 ex_header();
+
+let arrOfNums = [3, 5, 22, 5,  7,  2,  45, 75, 89, 21, 2];
+let sumOfNums = 0;
+
+for (let i of arrOfNums)
+	sumOfNums += i;
+
+console.log("sumOfNums = %d", sumOfNums);
 
 // -------------------------------------------------------
 // 9) Get the sum of two arrays… actually the sum of all their elements.
@@ -115,6 +131,19 @@ ex_header();
 // -------------------------------------------------------
 
 ex_header();
+
+let arr_1 = [3, 5, 22, 5,  7,  2,  45, 75, 89, 21, 2]; // --> 276
+let arr_2 = [9, 2, 42, 55, 71, 22, 4,  5,  90, 25, 26]; // --> 351
+
+let res_1 = 0, res_2 = 0;
+
+for (let i of arr_1)
+	res_1 += i;
+
+for (let i of arr_2)
+	res_2 += i;
+
+console.log("%d + %d = %d", res_1, res_2, res_1 + res_2);
 
 // -------------------------------------------------------
 // 10) Create a multiplication table which multiplies all values of x and y. Each should range from 1 to 10.
@@ -128,6 +157,12 @@ ex_header();
 // -------------------------------------------------------
 
 ex_header();
+
+for (let x = 1; x <= 10; x++) {
+	for (let y = 1; y <= 10; y++) {
+		console.log("x:%d * y:%d multiple: %d", x, y, x * y);
+	}
+}
 
 // -------------------------------------------------------
 //  BONUS CHALLENGE: CREATE A FUNCTION THAT RECEIEVES 2 PARAMETERS, AN ARRAY OF PRODUCT COSTS AND A TAX
